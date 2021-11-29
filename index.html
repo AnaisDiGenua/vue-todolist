@@ -35,7 +35,10 @@
                     <!-- /nome lista -->
 
                     <!-- aggiungi todo -->
-                    <div class="add-todo-box"></div>
+                    <div class="add-todo-box">
+                        <input type="text" placeholder="add item" v-model="inputValue">
+                        <button @click="addItem()"><i class="fas fa-plus"></i> Add</button>
+                    </div>
                     <!-- /aggiungi todo -->
                 </div>
                 <!-- /top container -->

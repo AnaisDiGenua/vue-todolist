@@ -27,7 +27,8 @@ const app = new Vue({
                 text: 'bread',
                 done: false
             }
-        ]
+        ],
+        inputValue: ''
         
     },
     methods: {
@@ -38,5 +39,12 @@ const app = new Vue({
         //         this.items.done = false;
         //     }
         // }
+        addItem: function() {
+            if(this.inputValue != '') {
+                this.items.push({text:this.inputValue, done:false});
+                this.inputValue = '';   
+            }
+            
+        }
     }
 });

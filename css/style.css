@@ -32,6 +32,11 @@ header h1 {
     margin: 50px auto;
     padding: 20px; 
 }
+.top-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .top-container h2 {
     color: white;
     font-size: 2rem;
@@ -40,6 +45,18 @@ header h1 {
     margin-right: 5px;
     font-size: 1.8rem;
     color: goldenrod;
+}
+.top-container .add-todo-box input {
+    padding: 5px;
+    border-radius: 0.5rem;
+    border: none;
+}
+.top-container .add-todo-box button {
+    padding: 5px 10px;
+    border-radius: 0.5rem;
+    background-color: goldenrod;
+    border: none;
+    margin-left: 5px;
 }
 .bottom-container {
     background-color: #29857f; 
