@@ -35,7 +35,7 @@
 
                     <!-- aggiungi todo -->
                     <div class="add-todo-box">
-                        <input type="text" placeholder="add item" v-model="inputValue">
+                        <input type="text" placeholder="add item" v-model="inputValue" @keyup.enter="addItem()">
                         <button @click="addItem()"><i class="fas fa-plus"></i> Add</button>
                     </div>
                     <!-- /aggiungi todo -->
