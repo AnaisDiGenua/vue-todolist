@@ -1,5 +1,61 @@
+/* reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* commons */
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: #29857f;
+}
+
+
+/* header */
+header {
+    width: 70%;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+header h1 {
+    margin-left: 10px;
+    font-size: 2.5rem;
+    color: #021732;
+}
+
+/* main */
+.container {
+    width: 60%;
+    margin: 50px auto;
+    padding: 20px; 
+}
+.top-container h2 {
+    color: white;
+    font-size: 2rem;
+}
+.top-container .fa-shopping-basket {
+    margin-right: 5px;
+    font-size: 1.8rem;
+    color: goldenrod;
+}
+.bottom-container {
+    background-color: #29857f; 
+    margin-top: 20px;
+}
+.todo-list ul  {
+    list-style: none;
+}
+.todo-list ul li {
+    background-color: white;
+    padding: 20px;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.todo-list ul li:not(:last-child) {
+    margin-bottom: 5px;
+}
+

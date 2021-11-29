@@ -5,11 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Vue To Do List</title>
 </head>
 <body>
     
-    <div id="root"></div>
+    <div id="root">
+
+        <!-- inizio header -->
+        <header>
+            <img src="img/Logo.png" alt="logo boolean">
+            <h1>To Do List</h1>
+        </header>
+        <!-- /header -->
+
+
+
+        <!-- inizio main -->
+        <main>
+            <div class="container">
+                
+                <!-- top container -->
+                <div class="top-container">
+                    <!-- nome lista -->
+                    <h2><i class="fas fa-shopping-basket"></i> Groceries</h2>
+                    <!-- /nome lista -->
+
+                    <!-- aggiungi todo -->
+                    <div class="add-todo-box"></div>
+                    <!-- /aggiungi todo -->
+                </div>
+                <!-- /top container -->
+
+                <!-- bottom container -->
+                <div class="bottom-container">
+                    <!-- lista todo -->
+                    <div class="todo-list">
+                        <ul>
+                            <li><span>ciao</span><i class="fas fa-times"></i></li>
+                            <li><span>ciao</span><i class="fas fa-times"></i></li>
+                            <li><span>ciao</span><i class="fas fa-times"></i></li>
+                            <li><span>ciao</span><i class="fas fa-times"></i></li>
+                        </ul>
+                    </div>
+                    <!-- /lista todo -->
+                </div>
+                <!-- bottom container --> 
+
+            </div>
+        </main>
+        <!-- /main -->
+
+    </div>
 
 
 
