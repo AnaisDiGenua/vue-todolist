@@ -45,6 +45,9 @@ const app = new Vue({
                 this.inputValue = '';   
             }
             
+        },
+        removeItem: function(index) {
+            this.items.splice(index, 1);
         }
     }
 });

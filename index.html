@@ -18,7 +18,6 @@
         <!-- inizio header -->
         <header>
             <img src="img/Logo.png" alt="logo boolean">
-            <h1>To Do List</h1>
         </header>
         <!-- /header -->
 
@@ -48,7 +47,7 @@
                     <!-- lista todo -->
                     <div class="todo-list">
                         <ul>
-                            <li v-for="item in items"><span>{{item.text}}</span><i class="fas fa-times"></i></li>
+                            <li v-for="(item,index) in items"><span>{{item.text}}</span><i class="fas fa-times" @click="removeItem(index)"></i></li>
                         </ul>
                     </div>
                     <!-- /lista todo -->
