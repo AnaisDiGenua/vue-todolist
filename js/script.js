@@ -25,20 +25,20 @@ const app = new Vue({
             },
             {
                 text: 'bread',
-                done: false
+                done: true
             }
         ],
         inputValue: ''
         
     },
     methods: {
-        // toggleUnderline: function() {
-        //     if(this.items.done == false) {
-        //         this.items.done = true;
-        //     } else {
-        //         this.items.done = false;
-        //     }
-        // }
+        toggleUnderline: function(index) {
+            if(this.items[index].done == false) {
+                this.items[index].done = true;
+            } else {
+                this.items[index].done = false;
+            }
+        },
         addItem: function() {
             if(this.inputValue != '') {
                 this.items.push({text:this.inputValue, done:false});

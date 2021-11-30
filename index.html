@@ -47,7 +47,7 @@
                     <!-- lista todo -->
                     <div class="todo-list">
                         <ul>
-                            <li v-for="(item,index) in items"><span>{{item.text}}</span><i class="fas fa-times" @click="removeItem(index)"></i></li>
+                            <li v-for="(item,index) in items"><span :class="item.done == true ? 'underline' : '' " @click="toggleUnderline(index)">{{item.text}}</span><i class="fas fa-times" @click="removeItem(index)"></i></li>
                         </ul>
                     </div>
                     <!-- /lista todo -->
